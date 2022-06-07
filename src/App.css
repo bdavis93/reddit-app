@@ -1,3 +1,102 @@
+html * {
+  font-size: 16px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  position: fixed;
+  z-index: 10;
+  background: white;
+}
+
+.logo {
+  height: 15%;
+  width: 15%;
+  margin-left: 2rem;
+}
+
+.form {
+  border-radius: 7px;
+  margin-right: 2rem;
+}
+
+.subreddits {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  float: left;
+  padding-right: 5%;
+  z-index: 5;
+  margin-top: 8%;
+  
+
+}
+
+.list li {
+  margin-top: 20px;
+}
+
+.redditContainer {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 25%;
+  padding-right: 2rem;
+  z-index: 5;
+  border-radius: 10px;
+  width: auto;
+}
+
+.reddit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  margin-top: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.reddit h2 {
+  margin-left: 0;
+}
+
+.reddit img {
+  height: 70%;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  
+}
+
+.reddit p {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .subreddits {
+    display: none;
+  }
+  .redditContainer {
+    position: absolute;
+    margin-top: 7%;
+    z-index: 5;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 .App {
   text-align: center;
 }
