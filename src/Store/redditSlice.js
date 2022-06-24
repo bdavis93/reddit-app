@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getSubredditPosts } from './index';
+import { getSubredditPosts } from '../API/redditAPI';
 
-initialState = {
+const initialState = {
     posts: []
 }
 
@@ -19,5 +19,4 @@ export const { getPostsSuccess } = redditSlice.actions;
 
 export default redditSlice.reducer;
 
-   export const posts = getSubredditPosts(subreddit);
-    dispatch(getPostsSuccess(posts))
+

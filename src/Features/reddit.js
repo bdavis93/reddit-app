@@ -5,7 +5,7 @@ import { getPostsSuccess } from '../Store/redditSlice';
 
 export const Reddit = (props) => {
 const {id, title, url} = props;
-const posts = useSelector((state) => state.redditPosts)
+const posts = useSelector((state) => state.redditPosts);
 const dispatch = useDispatch();
     
     return (
