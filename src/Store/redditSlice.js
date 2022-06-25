@@ -20,3 +20,5 @@ export const { getPostsSuccess } = redditSlice.actions;
 export default redditSlice.reducer;
 
 
+
+
